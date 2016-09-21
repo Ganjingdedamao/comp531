@@ -1,0 +1,127 @@
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="Wanyi Liu">
+    <!--link rel="icon" href="../../favicon.ico"-->
+
+    <title>Landing Page</title>
+        
+    <link rel="stylesheet" href="http://cdn.bootcss.com/bootstrap/3.3.0/css/bootstrap.min.css">
+
+    
+    <link rel="stylesheet" href="http://cdn.bootcss.com/bootstrap/3.3.0/css/bootstrap-theme.min.css">
+
+    
+    <script src="http://cdn.bootcss.com/jquery/1.11.1/jquery.min.js"></script>
+
+    
+    <script src="http://cdn.bootcss.com/bootstrap/3.3.0/js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="./index.js"></script>
+
+    <!-- Bootstrap core CSS -->
+    <link rel="stylesheet" href="./style.css" type="text/css" />
+    <link href="./css/bootstrap.min.css" rel="stylesheet">
+
+    
+  </head>
+
+  <body class="body_back" background="./image/back1.jpg" onload="setTime()">
+
+    <nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
+      <div class="container">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="navbar-brand" href="#">Rice Book</a>
+        </div>
+        
+      </div>
+    </nav>
+
+    
+    <br><br><br><br><br>
+    <br><br><br><br><br>
+   
+
+    <div class="container">
+      
+      <div class="row">
+        <div class="col-xs-5 col-sm-5 col-md-5 col-lg-5 div_back margin_5" >
+          <h2>New User? Register</h2><!--registration form-->
+            <form class="navbar-form navbar-left" role="form" method="GET" action="./main.html">
+              <div class="form-group">
+                <input type="text" placeholder="Name" id="acco_name" name="acco_name" class="form-control">
+              </div>
+              <div class="form-group">
+                <input type="text" placeholder="Display Name" id="disp_name" name="disp_name" class="form-control">
+              </div><br><br>
+              <div class="form-group">
+                <input type="text" placeholder="Email" id="email" name="email" class="form-control">
+              </div>
+              <div class="form-group">
+                <input type="text" placeholder="Phone" id="phone" name="phone" class="form-control">
+              </div><br><br>
+              <div class="form-group">
+                <input type="text" placeholder="Zipcode" id="zipcode" name="zipcode" class="form-control">
+              </div>
+              <div class="form-group">
+                  <input type="date" placeholder="Birthday" id="birth" name="birth" class="form-control">
+              </div><br><br>
+              <div class="form-group">
+                <input type="password" placeholder="Password" id="password" name="password" class="form-control">
+              </div>
+              <div class="form-group">
+                <input type="password" placeholder="Password Confirmation" id="pass_conf" name="pass_conf" class="form-control">
+              </div><br><br>
+              <input type="submit" class="btn btn-default float_right" onclick="return validation()" value="Register Now!"></button>
+            </form>
+           <label><input name="time" id="time" type="hidden" value="" /> </label>
+              
+            <label><input name="timedisplay" id="timedisplay" type="hidden" value="" /> </label> 
+          
+        </div>
+        <div class="col-xs-6 col-sm-6 col-lg-3 col-md-3  col-md-offset-2 col-lg-offset-2 div_back margin_5">
+          <h2>Login</h2><!--login information-->
+          
+            <br>
+            <div class="form-group">
+              <input type="text" placeholder="Username" name="log_username" id="log_username" class="form-control ">
+            </div><br>
+            <div class="form-group">
+              <input type="password" placeholder="Password" name="log_password" id="log_password" class="form-control">
+            </div>
+            <button class="btn btn-success float_right" onclick="return validatelogin()">Login</button>
+            <br>
+            <br>
+       </div>
+        
+      </div>
+      <br><br><br>
+      <br><br><br>
+
+      <hr>
+
+      <footer>
+        <p>&copy; Wanyi Liu 2016</p>
+      </footer>
+    </div> <!-- /container -->
+
+
+    <!-- Bootstrap core JavaScript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="http://cdn.bootcss.com/jquery/1.11.1/jquery.min.js"></script>
+    <script src="./js/bootstrap.min.js"></script>
+    <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
+    <!--script src="../../assets/js/ie10-viewport-bug-workaround.js"></script-->
+  </body>
+</html>

@@ -1,0 +1,133 @@
+
+<!DOCTYPE html>
+<html lang="en" class="height_100">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="Wanyi Liu">
+    <!--link rel="icon" href="../../favicon.ico"-->
+
+    <title>Profile Page</title>
+        
+    <link rel="stylesheet" href="http://cdn.bootcss.com/bootstrap/3.3.0/css/bootstrap.min.css">
+
+    
+    <link rel="stylesheet" href="http://cdn.bootcss.com/bootstrap/3.3.0/css/bootstrap-theme.min.css">
+
+    
+    <script src="http://cdn.bootcss.com/jquery/1.11.1/jquery.min.js"></script>
+
+    
+    <script src="http://cdn.bootcss.com/bootstrap/3.3.0/js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="./profile.js"></script>
+
+    <!-- Bootstrap core CSS -->
+    <link href="./css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="./style.css" type="text/css" />
+
+    
+  </head>
+
+  <body class="height_100 profile_back" background="./image/profile_back.jpg">
+
+    <nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
+      <div class="container">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="navbar-brand" href="#">Rice Book</a>
+        </div>
+        <div id="navbar" class="collapse navbar-collapse">
+          <ul class="nav navbar-nav">
+            <li class="active"><a href="#">Wanyi Liu</a></li>
+            <li ><a href="./main.html">Main page</a></li>
+          </ul>
+          <a class="navbar-brand navbar-right" href="./index.html">Logout</a>
+        </div><!-- /.nav-collapse -->
+      </div>
+    </nav>
+
+    <!-- Main jumbotron for a primary marketing message or call to action -->
+    <br><br>
+    <br><br>
+    <br><br>
+    <br><br>
+    
+    <div class="container" class="height_100">
+      <div class="row" class="height_100">
+        <div class="col-xs-6 col-sm-6 col-md-3 col-lg-3" >
+          <div class="thumbnail margin_top_10">
+            <img data-src="holder.js/100%x180" src="./image/Wanyi Liu.jpg"  class="img-responsive" alt="Responsive image">
+            <div class="caption">
+              <button class="btn btn-default float_right margin_top_10"  onclick="upfile.click()"><span class="glyphicon glyphicon-camera"></span> Photo</button>
+              <h3 id="Username" class="">Wanyi Liu</h3>
+              <h4 id="fun_status" name="fun_status" class="margin_top_10">Wanyi's fun status!</h4>
+              <input type="file" id="upfile" class="upload_file">    
+            </div>
+          </div> 
+        </div>
+        <div class="col-xs-6 col-sm-6 col-md-9 col-lg-9 border_bottom height_300px" >
+          <h3 class="float_bottom">Your Profile</h3>
+        </div>
+      </div>
+      <div class="row" class="height_100">
+        <div class="col-xs-12 col-sm-5 col-md-5 col-lg-5 height_90">
+          <ul><h3 class="mytitle">Current Info</h3>
+            <br>
+            <h4><span class="glyphicon glyphicon-user"></span> Account Name</h4>
+            <ul><h4 id="acconame_show">Wanyi Liu</h4></ul>
+
+            <h4><span class="glyphicon glyphicon-eye-open"></span> Display Name</h4>
+            <ul><h4 id="name_show">Wanyi Liu</h4></ul>
+          
+            <h4><span class="glyphicon glyphicon-envelope"></span> Email</h4>
+            <ul><h4 id="email_show">Wanyi.Liu@rice.edu</h4></ul>
+            
+            <h4><span class="glyphicon glyphicon-phone"></span> Phone</h4>
+            <ul><h4 id="phone_show">123-123-1234</h4></ul>
+            
+          
+            <h4><span class="glyphicon glyphicon-calendar"></span> Birthday</h4>
+            <ul><h4>12/25/1993</h4></ul> 
+          
+            <h4><span class="glyphicon glyphicon-map-marker"></span> Zipcode</h4>
+            <ul><h4 id="zip_show">77005</h4></ul> 
+          </ul>
+        </div><!--/.col-xs-6.col-lg-4-->
+        <div class="col-xs-12 col-sm-5 col-md-5 col-lg-5 height_90 border_left">
+          <h3 class="mytitle">Update Profile</h3>
+          <br>
+          <input type="text"  placeholder="Account Name" id="acco_name" name="acco_name" class="form-control margin_5" >
+          <input type="text"  placeholder="Display Name" id="disp_name" name="disp_name" class="form-control margin_5" >    
+          <input type="text"  placeholder="Email" id="email" name="email" class="form-control margin_5" >
+          <input type="text" placeholder="Phone" id="phone" name="phone" class="form-control margin_5">
+          <input type="text" placeholder="Zipcode" id="zipcode" name="zipcode" class="form-control margin_5">
+          <input type="password" placeholder="Password" id="password" name="password" class="form-control margin_5">
+          <input type="password" placeholder="Password Confirmation" id="pass_conf" name="pass_conf" class="form-control margin_5">
+          <br>
+          <button type="submit" class="btn btn-default float_right" onclick="updateinfor()">Update info</button>
+        </div><!--/.col-xs-6.col-lg-4-->   
+      </div><!--/row-->
+      
+      <hr>
+      <footer>
+        <p>&copy; Wanyi Liu 2016</p>
+      </footer>
+    </div> <!-- /container -->
+
+
+    <!-- Bootstrap core JavaScript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="http://cdn.bootcss.com/jquery/1.11.1/jquery.min.js"></script>
+    <script src="./js/bootstrap.min.js"></script>
+    <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
+    <!--script src="../../assets/js/ie10-viewport-bug-workaround.js"></script-->
+  </body>
+</html>
